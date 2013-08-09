@@ -47,4 +47,4 @@ NEW BSD
 
 Author
 ===============
-tyru <tyru.exe@gmail.com>
+tyru &lt;tyru.exe@gmail.com&gt;
