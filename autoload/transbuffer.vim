@@ -105,7 +105,9 @@ function! s:check_servername(srvname)
     endif
     if a:srvname[0] ==# '+'
         if s:exists_server(a:srvname[1:])
-            call s:error(a:srvname[1:] . ': the server already exists.')
+            call s:error(a:srvname[1:] . ': the server already exists'
+            \           . (a:srvname[1:] ==# v:servername ? "(it's you!)" : '')
+            \           . '.')
             return 0
         endif
     elseif !s:exists_server(a:srvname)
