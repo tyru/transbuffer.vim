@@ -18,7 +18,7 @@ function! transbuffer#cmd_get_buffer(srvname, file)
     endif
 
     " TODO: Use remote_read() to check successfully a file was opened.
-    let sendcmd = printf('<C-\><C-g>:PutFile %s %s<CR>', v:servername, a:file)
+    let sendcmd = printf('<C-\><C-g>:TransPutBuffer %s %s<CR>', v:servername, a:file)
     call remote_send(a:srvname, sendcmd)
 endfunction
 
