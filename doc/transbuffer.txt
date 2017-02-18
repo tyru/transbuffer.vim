@@ -1,4 +1,4 @@
-*transbuffer.txt* *transbuffer*
+*transbuffer.txt*
 
 Author:
   tyru <tyru.exe@gmail.com>
